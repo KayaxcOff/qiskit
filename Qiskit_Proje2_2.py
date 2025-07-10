@@ -106,7 +106,7 @@ def analyze_results(counts, password):
 
 # Tüm projeyi çalıştıran ana fonksiyon
 def run_full_project():
-    secret_password = '1010'  # Aranan şifre
+    secret_password = input("Şifre girin: ")  # Aranan şifre
     optimal_iterations = round((np.pi/4) * np.sqrt(2**len(secret_password)))  # Optimal iterasyon sayısı
 
     print(f"\n🔐 Aranan Şifre: {secret_password}")
